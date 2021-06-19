@@ -1,0 +1,119 @@
+/*
+* ==========================================
+* MODAL STYLES
+* ==========================================
+*/
+
+.prod-modal {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod-modal__body {
+    padding: 1rem 2rem 2rem;
+    width: 800px;
+    border-radius: 5px;
+    background-color: #ffffffe3;
+    height: 500px;
+}
+
+.prod-modal__header {
+    text-align: center;
+    margin: .3rem;
+}
+
+/*----------MODAL PRODUCTS CONTAINER STYLES----------*/
+
+.prod-modal__data {
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    height: 92%;
+    width: 100%;
+}
+
+.prod-modal__prod-item {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.prod-modal__prod-item:hover {
+    -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 1) inset;
+    -moz-box-shadow:    0 5px 10px 2px rgba(34, 60, 80, 1) inset;
+    box-shadow:         0 5px 10px 2px rgba(34, 60, 80, 1) inset;
+}
+
+.prod-modal__prod-item:active {
+    -webkit-box-shadow: 0 5px 50px 2px rgba(34, 60, 80, 1) inset;
+    -moz-box-shadow:    0 5px 50px 2px rgba(34, 60, 80, 1) inset;
+    box-shadow:         0 5px 50px 2px rgba(34, 60, 80, 1) inset;
+}
+
+/*---Products container styles---*/
+
+.prod-modal__items {
+    height: 100%;
+
+    flex: 2;
+    justify-content: center;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.prod-modal__prod-item {
+    margin: 10px;
+}
+
+/*---Basket container styles---*/
+
+.prod-modal__basket {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    padding: .5rem;
+}
+
+.close-modal-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-modal-button {
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0 5px 6px 2px rgba(34, 60, 80, 0.31);
+    -moz-box-shadow: 0 5px 6px 2px rgba(34, 60, 80, 0.31);
+    box-shadow: 0 5px 6px 2px rgba(34, 60, 80, 0.31);
+
+    transition: all 0.1s ease-in-out;
+}
+
+.close-modal-button:hover {
+    height: 35px;
+
+    font-size: 18px;
+}
+
+.close-modal-button:active {
+    -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.33) inset;
+    -moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.33) inset;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.33) inset;
+}

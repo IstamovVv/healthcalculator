@@ -1,0 +1,7 @@
+#calc-navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-dark {
+    background-color: #1f1f1f7d;
+}

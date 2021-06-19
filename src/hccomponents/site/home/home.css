@@ -1,0 +1,34 @@
+/*
+* ==========================================
+* HOME SECTION STYLES
+* ==========================================
+*/
+
+#home {
+    height: 100vh;
+    width: 100%;
+}
+
+.calc_image {
+    position: relative;
+    width: 90%;
+}
+
+.home__header {
+    font-size: 70px;
+}
+
+.home__text {
+    font-size: 30px;
+}
+
+.home__header,
+.home__text {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+#home .container-fluid,
+#home .container-fluid .row {
+    height: 100%;
+}

@@ -1,0 +1,117 @@
+/*
+* ==========================================
+* CALCULATOR MAIN STYLES
+* ==========================================
+*/
+
+#calculator {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-wrapper {
+    height: 440px;
+    width: 1000px;
+    background-color: #ffffffe8;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.46);
+    -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.46);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.46);
+}
+
+.nutrients {
+    flex: 4;
+    height: 100%;
+}
+
+.accordion {
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+/*
+* ==========================================
+* CALCULATOR PRODUCT LIST && PRODUCT ITEM STYLES
+* ==========================================
+*/
+
+.calculator__prod-items {
+    width: 400px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+
+    flex: 5;
+    flex-direction: row;
+}
+
+.calculator__prod-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 110px;
+    height: 110px;
+
+    margin: 5px;
+}
+
+/*
+* ==========================================
+* CLOSE BUTTON STYLES
+* ==========================================
+*/
+
+.close-item-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+
+    border: none;
+    outline: none;
+    background: none;
+}
+.close-item-btn__inner {
+    cursor: pointer;
+    position: relative;
+    height: 35px;
+    width: 30px;
+}
+.close-item-btn__left {
+    height: 2px;
+    width: 25px;
+    position: absolute;
+    margin-top: 20px;
+    background-color: #797979cc;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+.close-item-btn__right {
+    height: 2px;
+    width: 25px;
+    position: absolute;
+    margin-top: 20px;
+    background-color: #797979cc;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+
+.close-item-btn div:hover .close-item-btn__left {
+    transform: rotate(-45deg);
+}
+.close-item-btn div:hover .close-item-btn__right {
+    transform: rotate(45deg);
+}

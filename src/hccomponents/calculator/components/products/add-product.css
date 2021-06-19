@@ -1,0 +1,33 @@
+/*
+* ==========================================
+* ADD PRODUCT BUTTON STYLES
+* ==========================================
+*/
+
+.add-prod-btn {
+    margin: 5px;
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+
+.add-prod-btn::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\271A";
+    font-size: 80px;
+    color: #FFF;
+    line-height: 100px;
+    text-align: center;
+    transition: all .15s ease-in-out;
+}
+
+.add-prod-btn:hover::after {
+    font-size: 100px;
+}
