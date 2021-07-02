@@ -13,6 +13,13 @@
     flex: 2;
     margin: 5px;
     padding: 5px;
+    overflow: auto;
+    min-height: 250px;
+}
+
+.selected-items::-webkit-scrollbar {
+    width: 0;
+    background-color: #f9f9fd;
 }
 
 .selected-item {

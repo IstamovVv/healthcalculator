@@ -17,6 +17,8 @@ type MineralsObject = {
 
 type VitaminsObject = {
     [index: string]: number,
+    AlphaCarotene: number,
+    BetaCarotene: number,
     A: number,
     B1: number,
     B2: number,
@@ -56,6 +58,8 @@ export const DailyRateNutrients: NutrientsObject = {
     },
 
     vitamins: {
+        AlphaCarotene: 5000,
+        BetaCarotene: 5000,
         A: 900,
         B1: 1200,
         B2: 1300,

@@ -65,13 +65,13 @@ export class Iron extends Mineral {
 }
 
 export class Copper extends Mineral {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("Copper", value, unit);
     }
 }
 
 export class Boron extends Mineral {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("Boron", value, unit);
     }
 }
@@ -83,31 +83,31 @@ export class Zinc extends Mineral {
 }
 
 export class Manganese extends Mineral {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("Manganese", value, unit);
     }
 }
 
 export class Selenium extends Mineral {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("Selenium", value, unit);
     }
 }
 
 export class Fluorine extends Mineral {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("Fluorine", value, unit);
     }
 }
 
 export class VitA extends Vitamin {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("A", value, unit);
     }
 }
 
 export class VitB1 extends Vitamin {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("B1", value, unit);
     }
 }
@@ -128,18 +128,18 @@ export class VitB4 extends Vitamin {
     }
 }
 export class VitB5 extends Vitamin {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("B5", value, unit);
     }
 }
 export class VitB6 extends Vitamin {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("B6", value, unit);
     }
 }
 
 export class VitB9 extends Vitamin {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("B9", value, unit);
     }
 }
@@ -157,8 +157,20 @@ export class VitC extends Vitamin {
 }
 
 export class VitD extends Vitamin {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("D", value, unit);
+    }
+}
+
+export class VitD2 extends Vitamin {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
+        super("D2", value, unit);
+    }
+}
+
+export class VitD3 extends Vitamin {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
+        super("D3", value, unit);
     }
 }
 
@@ -169,7 +181,19 @@ export class VitE extends Vitamin {
 }
 
 export class VitK extends Vitamin {
-    constructor(value: number, unit:unitsEnum = unitsEnum.mkg) {
+    constructor(value: number, unit:unitsEnum = unitsEnum.mg) {
         super("K", value, unit);
+    }
+}
+
+export class VitBetaCarotene extends Vitamin {
+    constructor(value: number, unit = unitsEnum.mg) {
+        super("BetaCarotene", value, unit);
+    }
+}
+
+export class VitAlphaCarotene extends Vitamin {
+    constructor(value: number, unit = unitsEnum.mg) {
+        super("AlphaCarotene", value, unit);
     }
 }

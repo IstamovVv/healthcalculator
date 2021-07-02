@@ -15,7 +15,7 @@ this.nutrients = {
 import Nutrient from "./nutrients/Nutrient";
 
 export default class Product {
-    constructor(name : string, type : string) {
+    constructor(name : string, type : string = 'Product') {
         this.name = name;
         this.type = type;
     }

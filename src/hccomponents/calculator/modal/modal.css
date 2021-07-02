@@ -63,13 +63,16 @@
 
 .prod-modal__items {
     height: 100%;
-
     flex: 2;
     justify-content: center;
-
     position: relative;
     margin: 0;
     padding: 0;
+}
+
+.prod-modal__items::-webkit-scrollbar {
+    width: 0;
+    background-color: #f9f9fd;
 }
 
 .prod-modal__prod-item {

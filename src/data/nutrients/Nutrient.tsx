@@ -1,7 +1,7 @@
 import {unitsEnum} from "./UnitsEnum";
 
 export default class Nutrient {
-    constructor(name: string, type: string, value:number, unit: unitsEnum) {
+    constructor(name: string, type: string, value:number, unit: unitsEnum = unitsEnum.mg) {
         this.name = name;
         this.type = type;
         this.value = value;
@@ -15,13 +15,13 @@ export default class Nutrient {
 }
 
 export class Mineral extends Nutrient {
-    constructor(name: string, value: number, unit: unitsEnum) {
+    constructor(name: string, value: number, unit: unitsEnum = unitsEnum.mg) {
         super(name, "Mineral", value, unit);
     }
 }
 
 export class Vitamin extends Nutrient {
-    constructor(name: string, value: number, unit: unitsEnum) {
+    constructor(name: string, value: number, unit: unitsEnum = unitsEnum.mg) {
         super(name, "Vitamin", value, unit);
     }
 }

@@ -7,7 +7,6 @@
 .accordion-body {
     overflow: auto;
     max-height: 235px;
-    -ms-overflow-style: none;
 }
 
 .accordion-body::-webkit-scrollbar {
